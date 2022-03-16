@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
      <head>
          <title>hunt mechanism</title>
     
@@ -20,56 +20,56 @@
 <body>
     <h2 style="color:brown">Bird hunt by ThrinadhChowdary Gutta</h2>
 		<div  class="container-fluid ">
-            <div style="background-color: aquamarine;border-radius: 20px;">Click on the squares to search for bird.</div>
-            <div style="color:aqua" id ="shakes"> Number of shakes is zero.</div>
-            <div style="color:chocolate;" id="score"> Location score is unknown.</div>
+            <div class="d-inline p-2 bg-primary text-black centre">Click on the squares to search for bird.</div>
+            <div class="d-inline p-2 bg-success text-white" id="shakes"> Number of shakes is zero.</div>
+            <div class="d-inline p-2 bg-warning text-black" id="score"> Location score is unknown.</div>
             </div><br>
 
             <div class="image-grid d-flex flex-column justify-content-center align-items-center"></div>
             <div class="row">
-                <div class="col-sm-1"><img src="breeza.jpg" id = "0" onclick = "check(0)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "1" onclick = "check(1)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "2" onclick = "check(2)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "3" onclick = "check(3)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "4" onclick = "check(4)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i0" onclick = "check(0)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i1" onclick = "check(1)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i2" onclick = "check(2)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i3" onclick = "check(3)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i4" onclick = "check(4)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
                 
             </div>
             <div class="row">
-                <div class="col-sm-1"><img src="breeza.jpg" id = "6"   onclick = "check(5)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "7"   onclick = "check(6)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "8"   onclick = "check(7)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "9"   onclick = "check(8)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "10"   onclick = "check(9)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i5"   onclick = "check(5)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i6"   onclick = "check(6)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i7"   onclick = "check(7)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i8"   onclick = "check(8)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i9"   onclick = "check(9)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
                 
             </div>
             <div class="row">
-                <div class="col-sm-1"><img src="breeza.jpg" id = "12"   onclick = "check(10)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "13"   onclick = "check(11)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "14"   onclick = "check(12)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "15"   onclick = "check(13)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "16"   onclick = "check(14)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i10"   onclick = "check(10)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i11"   onclick = "check(11)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i12"   onclick = "check(12)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i13"   onclick = "check(13)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i14"   onclick = "check(14)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
                  
             </div>
             <div class="row">
-                <div class="col-sm-1"><img src="breeza.jpg" id = "18"   onclick = "check(15)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "19"   onclick = "check(16)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "20"   onclick = "check(17)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "21"   onclick = "check(18)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "22"   onclick = "check(19)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i15"   onclick = "check(15)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i16"   onclick = "check(16)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i17"   onclick = "check(17)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i18"   onclick = "check(18)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i19"   onclick = "check(19)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
                 
             </div>
             <div class="row">
-                <div class="col-sm-1"><img src="breeza.jpg" id = "18"   onclick = "check(20)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "19"   onclick = "check(21)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "20"   onclick = "check(22)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "21"   onclick = "check(23)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
-                <div class="col-sm-1"><img src="breeza.jpg" id = "22"   onclick = "check(24)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i20"   onclick = "check(20)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i21"   onclick = "check(21)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i22"   onclick = "check(22)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i23"   onclick = "check(23)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
+                <div class="col-sm-1"><img src="breeza.jpg" id = "i24"   onclick = "check(24)" alt="tree" style="width: 100px;height: 100px; padding-bottom: 5%;"></div>
                 
             </div>
-
+</body>
            
         
-	</body>
+	
   <script>
   
     var ids=["i0","i1","i2","i3","i4","i5","i6","i7","i8","i9","i10","i11","i12","i13","i14","i15","i16","i17","i18","i19","i20","i21","i22","i23","i24"]
@@ -80,9 +80,9 @@
         id=ids[position]
         img_pos=document.getElementById(id)
         if(position==birdlLocation)
-           img_pos.src="bird.jpg"
+           img_pos.src="bird1.jpg"
            else
-           img_pos.src="nest.jpg"
+           img_pos.src="bird2.jpg"
   
            shakeCount=shakeCount+1;
            document.getElementById("shakes").innerHTML = "Number of shakes is " + shakeCount;
@@ -126,4 +126,5 @@
   
          }
   </script>
+  
 	</html>	
