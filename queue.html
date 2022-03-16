@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reversed queue page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+    .flex-container {
+      display: flex;  flex-direction:row;
+      background-color: red;
+  }
+
+.flex-container > div {  /*div children of the flex container*/
+  background-color: #f1f1f1; 
+  margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+	 .flex-container{
+		 flex-direction:column;
+		 background-color: green;
+	  }
+	}
+</style></head>
+
+
+
+<body>
+
+	<div class="container">
+		<h2>ThrianadhChowdary builds a reversed queue</h2>
+		<div class="flex-container" id="target">
+		  <div class="queue">row item 1</div>   
+		  <div class="queue">row item 2</div>  
+		  <div class="queue">row item 3</div>  
+		   
+		   
+		</div>
+		<br>
+
+		<input type="text" id="input" name="input">
+	<button class="btn btn-primary" onclick="makeNewDiv()"> Add value </button>
+	<br>
+	<button class="btn btn-success" onclick="fetchItem()"> Fetch</button>
+	<button class="btn btn-danger" onclick="zap()"> Zap values</button>
+    <br><br>
+	<button onclick="Unique()" class="btn btn-info"><b>Unique</b></button>
+	
+
+	
+</div>	
+</body>
+<script>
+	function makeNewDiv(){
+		let eleme = document.createElement("div")
+		eleme.innerHTML = document.getElementById("input").value;
+		eleme.setAttribute('class', 'queue');
+		eleme.style.color = "blue"
+		let container = document.getElementById('target')
+		container.insertBefore(eleme, container.firstChild);
+	}
+
+	function fetchItem() {
+		queueItems = document.getElementsByClassName('queue');
+		var le = queueItems.length;
+		if (le > 0) {
+			for (let i = 0; i < le; i++) {
+				var listsElements = queueItems[le - 1];			
+				listsElements.remove();
+			}
+		}
+	}
+
+	function zap() {
+		var queueItems = document.getElementsByClassName("queue")
+		var lene = queueItems.length;
+		var item = document.getElementById("input").value;
+		for (let cut = 0; cut < lene; cut++) {
+			if (item == queueItems[cut].innerHTML) {
+				var liElements1 = queueItems[cut].remove();
+				liElements1.remove();
+				console.log("We are getting rid of all the elements with that text");
+			}
+		}
+	}
+
+	function Unique(){
+	var queueItems = document.getElementsByClassName("queue")
+	var l=queueItems.length
+    for(let cut=0;cut<l;cut++){
+		for(let cg=cut+1;cg<l;cg++){
+			
+			if(queueItems[cut].innerHTML==queueItems[cg].innerHTML){
+			
+				queueItems[cg].remove()
+				l--;
+				cg--;
+			}
+
+		}
+	}
+}
+</script>
+</html>	
